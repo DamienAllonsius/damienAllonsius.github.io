@@ -16,10 +16,7 @@ let arrow_keys_handler = function(e) {
 };
 function setup() {
     var canvas = createCanvas(width, height);
-    // Prevent the arrow to scroll the page
-
-
-    canvas.parent("snake");
+    canvas.parent("snake").mouseClicked(reset);
 
     frameRate(frameSpeed);
     snake = new Snake();
@@ -47,7 +44,7 @@ function keyPressed() {
 	break;
     }
 }
-function mousePressed(){
+function reset(){
     play = true;
     snake = new Snake();
     loop();
