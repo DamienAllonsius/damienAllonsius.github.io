@@ -1,4 +1,4 @@
-    class Snake {
+class Snake {
     constructor() {
 	this.body = []
 	this.body[0] = createVector(width / (2 * rez), height / (2 * rez))

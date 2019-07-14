@@ -14,6 +14,8 @@ let arrow_keys_handler = function(e) {
 	e.preventDefault();
     }
 };
+
+
 function setup() {
     var canvas = createCanvas(width, height);
     canvas.parent("snake").mouseClicked(reset);
