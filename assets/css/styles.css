@@ -666,3 +666,9 @@ a.dotted-link:hover {
     max-width: inherit;
   }
 }
+
+#Gitframe {
+  border: 1px solid black;
+  height: 50%;
+  width: 50%;
+}
