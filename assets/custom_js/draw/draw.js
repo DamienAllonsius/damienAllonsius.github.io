@@ -1,5 +1,5 @@
-let height = 800;
-let width = 800;
+var _height = 800;
+var _width = 800;
 var background_color = 220;
 var stroke_colors = 20;
 
@@ -7,7 +7,7 @@ var radius = 60;
 var diameter = radius * 2;
 var offset = -50;
 var angle_offset = - 3.1415/2;
-var center_x = width - 2 *radius - stroke_colors - 1.3*offset;
+var center_x = _width - 2 *radius - stroke_colors - 1.3*offset;
 var center_y = 2 * radius + stroke_colors - 3 * offset;
 
 var size_color = 7;
@@ -15,7 +15,7 @@ var size_draw = 5;
 var max_size_draw = 15;
 var size_selectors = 5;
 
-var drawing_zone = [10, 10, width - 3*radius, height-100];
+var drawing_zone = [10, 10, _width - 3*radius, _height-100];
 
 function cart_to_polar(x,y){
     if (x==0){
@@ -156,7 +156,7 @@ class Circle {
 
 
 function setup() {
-    createCanvas(width, height);
+    createCanvas(_width, _height);
 
     circle = new Circle();
     draw_background();

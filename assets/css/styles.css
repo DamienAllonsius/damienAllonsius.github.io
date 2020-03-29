@@ -668,7 +668,6 @@ a.dotted-link:hover {
 }
 
 #Gitframe {
-  border: 1px solid black;
-  height: 50%;
-  width: 50%;
+    transform: scale(0.5);
+    transform-origin: top left;
 }
