@@ -38,7 +38,7 @@
 
 </head>
 
-<body onload="triggerShow();">
+<body onload="triggerShow('show_hide_abstract');triggerShow('show_hide_articles');triggerShow('show_hide_confs');triggerShow('show_hide_thesis');">
 <!-- ******HEADER****** -->
 <header id="presentation" class="header">
     <div class="container clearfix">
@@ -77,19 +77,19 @@
                         <div class="item">
                             <h3 class="title">Post-Doc Researcher  <span class="place"><a href="https://www.upf.edu/">Universitat Pompeu Fabra (Barcelona, Spain)</a></span> <span class="year">(2018 - 2019)</span></h3>
                             <p>
-                                Previously, I did my postdoc at  <a href = "https://www.upf.edu/"> Universitat Pompeu Fabra</a> in <a href = "https://www.google.com/maps/place/Barcelone/@41.3947688,2.0787279,12z/data=!3m1!4b1!4m5!3m4!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3850639!4d2.1734035"> Barcelona (Spain) </a> in the <a href = "https://www.upf.edu/web/ai-ml" > AI-ML team</a> in <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">Reinforcement Learning</a>. I was involved in the European Project <i> <a href = "https://www.upf.edu/web/delta">Dynamically Evolving Long-Term Autonomy</a> </i> (DELTA).
+                                I did my postdoc at  <a href = "https://www.upf.edu/"> Universitat Pompeu Fabra</a> in <a href = "https://www.google.com/maps/place/Barcelone/@41.3947688,2.0787279,12z/data=!3m1!4b1!4m5!3m4!1s0x12a49816718e30e5:0x44b0fb3d4f47660a!8m2!3d41.3850639!4d2.1734035"> Barcelona (Spain) </a> in the <a href = "https://www.upf.edu/web/ai-ml" > AI-ML team</a> in <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">Reinforcement Learning</a>. I was involved in the European Project <i> <a href = "https://www.upf.edu/web/delta">Dynamically Evolving Long-Term Autonomy</a> </i> (DELTA).
                             </p>
                             <p> We applied (Hierarchical) Reinforcement Learning to optimize the electrical consumption of a smartgrid. We worked on a microgrid simulator developed by <a href="http://www.montefiore.ulg.ac.be/"> Montefiore research unit</a> in Liège (Belgium).
                             </p>
                         </div><!--//item-->
                     </div>
 
-                    <div class="content">
-                        <div class="item">
-                            <h3 class="title">Post-Doc Researcher  <span class="place"><a href="https://www.upf.edu/">Universitat Pompeu Fabra (Barcelona, Spain)</a></span> <span class="year">(2018 - 2019)</span></h3>
-                            <p> I was part of the European <a href="https://www.upf.edu/web/delta"> DELTA project </a>. We applied (Hierarchical) Reinforcement Learning to optimize the electrical consumption of a smartgrid. We worked on a microgrid simulator developed by <a href="http://www.montefiore.ulg.ac.be/"> Montefiore research unit</a> in Liège (Belgium). </p>
-                        </div><!--//item-->
-                    </div><!--//content-->
+<!--                    <div class="content">-->
+<!--                        <div class="item">-->
+<!--                            <h3 class="title">Post-Doc Researcher  <span class="place"><a href="https://www.upf.edu/">Universitat Pompeu Fabra (Barcelona, Spain)</a></span> <span class="year">(2018 - 2019)</span></h3>-->
+<!--                            <p> I was part of the European <a href="https://www.upf.edu/web/delta"> DELTA project </a>. We applied (Hierarchical) Reinforcement Learning to optimize the electrical consumption of a smartgrid. We worked on a microgrid simulator developed by <a href="http://www.montefiore.ulg.ac.be/"> Montefiore research unit</a> in Liège (Belgium). </p>-->
+<!--                        </div>&lt;!&ndash;//item&ndash;&gt;-->
+<!--                    </div>&lt;!&ndash;//content&ndash;&gt;-->
 
                     <div class="content">
                         <div class="item">
@@ -112,11 +112,77 @@
                             <a href="assets/docs/These_version_finale.pdf"> See the introduction of my PhD for a detailed presentation.
                             </a>
                             <p>
-                                <button onclick="triggerShow()">
+                                <button onclick="triggerShow('show_hide_thesis')">
+                                    <b>Thesis</b>
+                                </button>
+                                <button onclick="triggerShow('show_hide_abstract')">
                                     <b>Abstract</b>
                                 </button>
+                                <button onclick="triggerShow('show_hide_articles')">
+                                    <b>Articles</b>
+                                </button>
+                                <button onclick="triggerShow('show_hide_confs')">
+                                    <b>Conferences</b>
+                                </button>
                             </p>
-                            <div id="show_hide">
+                            <div id="show_hide_thesis">
+                                <ul>
+                                    <li>
+                                    Thesis - <a href="assets/docs/These_version_finale.pdf"> Etude spectrale d’opérateurs de Sturm-Liouville et applications à la contrôlabilité de problèmes paraboliques discrets et continus </a>
+                                    </li>
+                                    <li>
+                                    Presentation - <a href="assets/docs/Soutenance_these_Allonsius.pdf"> Thèse soutenue le 26 Septembre 2018 </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div id="show_hide_articles">
+                                <ul>
+                                    <li>
+                                        <a href="assets/docs/SPECTRAL_ANALYSIS.pdf">Spectral analysis of discrete elliptic operators and applications in control theory</a>, (Numerische Mathematik, 2018) (avec F. Boyer et M. Morancey). Also available <a href="https://hal.archives-ouvertes.fr/hal-01422168v1">on Hal</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="assets/docs/BOUNDARY_CONTROL.pdf">Boundary null-controllability of semi-discrete coupled parabolic systems in some multi-dimensional geometries</a>, (Mathematical Control and Related Fields, 2018) (avec F. Boyer). Also available <a href="https://hal.archives-ouvertes.fr/hal-01827044">on Hal</a>
+                                    </li>
+                                    <li>
+                                        <a href="assets/docs/GRUSHIN.pdf">Analysis of the null-controllability of degenerate parabolic systems of Grushin type via the moments method</a>, (Mathematical Control and Related Fields, 2019) (avec F. Boyer et M. Morancey). Also available <a href="https://hal.archives-ouvertes.fr/hal-02471592">on Hal</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div id="show_hide_confs">
+                                <ul>
+                                    <li>
+                                        <b>Soutenance Thèse</b> -<a href="assets/docs/Soutenance_these_Allonsius.pdf"> PhD defended on the 26th of Septembre 2018 </a>
+                                    </li>
+                                    <li>
+                                        <b>ISMP</b>. Juillet 2018. <a href="https://ismp2018.sciencesconf.org/"> Site de la conférence </a>
+                                    </li>
+                                    <li>
+                                        <b>GTT Jussieu</b> Groupe de Travail des Thésards. LJLL. Janvier 2018. <a href="https://www.ljll.math.upmc.fr/omnes/gtt/"> Page du séminaire </a> et <a href="assets/docs/GTT2.pdf"> Exposé</a>.
+                                    </li>
+                                    <li>
+                                        <b>VII Partial differential equations, optimal design and numerics</b>. Benasque, Espagne. Août 2017. <a href="assets/docs/presentation_benasque.pdf"> Exposé </a>.
+                                    </li>
+                                    <li>
+                                        <b>Workshop APACHE</b>. Toulouse. Décembre 2016. <a href="assets/docs/presentation_toulouse.pdf"> Exposé </a>.
+                                    </li>
+                                    <li>
+                                        <b>Porquerolles</b>. Mai 2016. <a href="assets/docs/presentation_PICOF.pdf"> Exposé</a>.
+                                    </li>
+                                    <li>
+                                        <b>PICOF</b> Problèmes Inverses, Contrôle, Optimisation de Formes. Mini-symposium on Control of PDE. Autrans. Juin 2016. <a href="https://picof.sciencesconf.org/"> Site de la conférence </a> et <a href="assets/docs/presentation_PICOF.pdf"> Exposé</a>.
+                                    </li>
+                                    <li>
+                                        <b>Séminaire des doctorants de Marseille</b>. Mai 2016. <a href="http://ed184.lif.univ-mrs.fr/doku.php?id=espace_doctorants:seminaire:start"> Page du séminaire </a> et <a href="assets/docs/seminaire_doctorants.pdf"> Exposé </a>.
+                                    </li>
+                                    <li>
+                                        <b>CANUM</b> 43e Congrès National d'Analyse Numérique. Obernai. Mai 2016. <a href="http://smai.emath.fr/canum2016/"> Site de la conférence </a> et  <a href="assets/docs/presentation_PICOF.pdf"> Exposé </a>.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="show_hide_abstract">
                                 <p>
                                     In this thesis, we study the null controllability of some continous and semi discretized parabolic systems.
                                 </p>

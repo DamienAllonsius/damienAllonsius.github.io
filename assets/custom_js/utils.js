@@ -1,5 +1,5 @@
-function triggerShow() {
-	var x = document.getElementById("show_hide");
+function triggerShow(id) {
+	var x = document.getElementById(id);
 	if (x.style.display === "none") {
 	    x.style.display = "block";
 	} else {
